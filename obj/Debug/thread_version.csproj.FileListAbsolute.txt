@@ -1,0 +1,7 @@
+D:\Visual Studio\source\repos\Platform_Computing\assignment2\task_version\bin\Debug\task_version.exe.config
+D:\Visual Studio\source\repos\Platform_Computing\assignment2\task_version\bin\Debug\task_version.exe
+D:\Visual Studio\source\repos\Platform_Computing\assignment2\task_version\bin\Debug\task_version.pdb
+D:\Visual Studio\source\repos\Platform_Computing\assignment2\task_version\obj\Debug\thread_version.csprojResolveAssemblyReference.cache
+D:\Visual Studio\source\repos\Platform_Computing\assignment2\task_version\obj\Debug\thread_version.csproj.CoreCompileInputs.cache
+D:\Visual Studio\source\repos\Platform_Computing\assignment2\task_version\obj\Debug\task_version.exe
+D:\Visual Studio\source\repos\Platform_Computing\assignment2\task_version\obj\Debug\task_version.pdb
