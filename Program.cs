@@ -1,6 +1,6 @@
 ﻿/**********************************
  *                                *
- * Arttu Lehtovaara, 1701848      *
+ * Arttu Lehtovaara               *
  *                                *
  **********************************/
 using System;
@@ -23,14 +23,12 @@ namespace thread_version
         {
             for (int i = 0; i < array.Length; i++)
             {
-                if (array[i] == 0) // etsitään tyhjä paikka, tyhjä paikka = 0
+                if (array[i] == 0)
                 {
                     return i;
                 }
             }
-            return -1; // palautetaan negatiivinen arvo jos ei löytynyt,
-            // koska index ei voi olla negatiivinen arvo
-            
+            return -1;
         }
 
         static void producer(object data)
@@ -49,13 +47,12 @@ namespace thread_version
                 if (index >= 0)
                 {
                     products.SetValue(tid, index);
-                    //products[index] = tid;
                 }
                 mutex.ReleaseMutex();
                 //if not found-- > break
                 if (index == -1)
                     break;
-                Thread.Sleep(100); // kokeilin sleep:iä käyttäen
+                Thread.Sleep(100);
             }
         }
 
@@ -97,12 +94,7 @@ namespace thread_version
             }
             // and finally calculate statistics
             int[] products_count = new int[thread_count + 1];
-            // let's temporarily emulate the results
-            //Random r = new Random();
-            //for (int i = 0; i < products.Length; i++)
-            //{
-            //    products[i] = r.Next(1, thread_count + 1);
-            //}
+            
             // for loop where all the products counted by producer id
             for (int i = 0; i < products.Length; i++)
             {
@@ -124,12 +116,7 @@ namespace thread_version
                     Console.Write(products_count[i] + " ");
                 }
             }
-            //foreach (var item in products_count)
-            //{
-            //    Console.Write(item + " ");
-            //}
             Console.WriteLine();
-            
         }
     }
 }
